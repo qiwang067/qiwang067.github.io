@@ -10,6 +10,9 @@ redirect_from:
 {% include base_path %}
 
 # Education Background
+
+test
+
 # Work Experience
 # Honors & Awards
 
