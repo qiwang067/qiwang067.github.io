@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Lantao Yu"
+title                    : "Qi Wang"
 title_separator          : "-"
-name                     : &name "Lantao Yu"
+name                     : &name "Qi Wang"
 description              : &description "Ph.D. student, Computer Science Department, Stanford University"
-url                      : https://lantaoyu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://qiwang067.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "LantaoYu/lantaoyu.github.io"
+repository               : "qiwang067/qiwang067.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -77,13 +77,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Lantao Yu"
-  avatar           : "lantaoyu.jpg"
-  bio              : "Ph.D. student, Computer Science Department, Stanford University"
-  location         : "Stanford, California"
+  name             : "Qiwang"
+  avatar           : ".jpg"
+  bio              : "Postgraduate student, Computer Science Department, Stanford University"
+  location         : "China"
   employer         : 
-  googlescholar    : "https://scholar.google.com/citations?user=Ixg9n-EAAAAJ&hl=en"
-  email            : "lantaoyu@cs.stanford.edu"
+  googlescholar    : ""
+  email            : ""
   uri              : 
   bitbucket        :
   codepen          :
@@ -91,7 +91,7 @@ author:
   flickr           :
   facebook         : 
   foursquare       :
-  github           : "LantaoYu"
+  github           : "qiwang067"
   google_plus      :
   keybase          :
   instagram        : 
