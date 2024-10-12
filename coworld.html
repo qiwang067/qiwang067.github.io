@@ -58,7 +58,7 @@
               <sup>*</sup>Denotes equal contribution &nbsp;&nbsp;&nbsp; <sup>†</sup>Indicates corresponding author
 	      <br><br>
             </p>
-            <div class="column has-text-centered">
+            
               <div class="publication-links">
              
                 <!-- PDF Link. -->
@@ -106,7 +106,7 @@
   <section class="hero teaser">
     <div class="hero-body">
       <div class="columns is-centered">
-        <div class="column is-5"> <!--调整is后面的数字可以调整图片大小-->
+        <div class="column is-5"> <!-- Adjust the number after 'is' to change the image size -->
           <img id="teaser" height="30%" src="./projects/coworld/overview.png" alt="overview">
           <h2 class="caption is-size-5 subtitle has-text-centered">
             Our approach solves offline visual RL through a transfer learning paradigm. It harnesses cross-domain knowledge to provide flexible constraints for value estimation on the offline dataset, without impeding state exploration with potential advantages.
@@ -130,6 +130,94 @@
       </div>
     </div>
   </section>
+
+  <div class="container">
+  <div class="column has-text-centered">
+    <div class="columns is-centered">
+    <div class="column is-two-thirds has-text-justified">
+      <!-- <h3 class="title is-4">Evaluation</h3> -->
+      <h2 class="title">Evaluation</h2>
+      <p><b>Showcases of in Meta-World.</b></p>
+    </div>
+  </div>
+    <!-- <div class="column is-full-width">
+    </div>   -->
+<style>
+  .video-container {
+    display: inline-block; /* The container for video and text is inline-block, supporting horizontal alignment */
+    text-align: center; /* Center the text inside the container */
+    margin: 10px; /* Space between each video */
+  }
+  .video-container video {
+    display: block; /* Make the video a block element, so the text is placed below the video */
+  }
+  .video-container span {
+    display: block; /* Make the span a block element, ensuring the text sticks directly below the video */
+    margin-top: 5px; /* Controls the distance between the video and the text */
+    font-size: 20px; /* Set the font size of the text */
+    color: #333; /* Set the text color */
+  }
+  .break {
+    width: 100%; /* Forces a line break */
+  }
+</style>
+
+    
+    <div class="video-container">
+      <video id="meatworld1" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/coworld/videos/offlinedv2_bp.mp4" type="video/mp4">
+      </video>
+      <span>Offline DV2</span>
+    </div>
+    
+  
+    <div class="video-container">
+      <video id="meatworld2" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/coworld/videos/lompo_bp.mp4" type="video/mp4">
+      </video>
+      <span>LOMPO</span>
+    </div>
+    
+  
+    <div class="video-container">
+      <video id="meatworld3" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/coworld/videos/coworld_bp.mp4" type="video/mp4">
+      </video>
+      <span>CoWorld</span>
+    </div>
+    
+  <!-- Force line break -->
+  <div class="break"></div>
+  <div class="columns is-centered">
+  <div class="column is-two-thirds has-text-justified">
+    <p><b>Showcases of in DMC.</b></p>
+  </div>
+</div>
+    <div class="video-container">
+      <video id="dmc1" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/coworld/videos/offlinedv2_dmc.mp4" type="video/mp4">
+      </video>
+      <span>Offline DV2</span>
+    </div>
+
+     <div class="video-container">
+      <video id="dmc2" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/coworld/videos/lompo_dmc.mp4" type="video/mp4">
+      </video>
+      <span>LOMPO</span>
+    </div>
+
+     <div class="video-container">
+      <video id="dmc3" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/coworld/videos/coworld_dmc.mp4" type="video/mp4">
+      </video>
+      <span>CoWorld</span>
+    </div>
+
+
+  </div>
+</div>
+</div>
 
   <section class="section" id="BibTeX">
     <div class="container content">
