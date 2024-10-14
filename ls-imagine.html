@@ -134,117 +134,127 @@
   </section>
 
   <div class="container">
-  <div class="column has-text-centered">
+    <div class="column has-text-centered">
+      <div class="columns is-centered">
+      <div class="column is-two-thirds has-text-justified">
+        <!-- <h3 class="title is-4">Evaluation</h3> -->
+        <h2 class="title">Evaluation</h2>
+        <p><b>Showcases of LS-Imagine in MineDojo.</b></p>
+      </div>
+    </div>
+      <!-- <div class="column is-full-width">
+      </div>   -->
+  <style>
+    .video-container {
+      display: inline-block; /* The container for video and text is inline-block, supporting horizontal alignment */
+      text-align: center; /* Center the text inside the container */
+      margin: 8px; /* Space between each video */
+    }
+    .video-container video {
+      display: block; /* Make the video a block element, so the text is placed below the video */
+    }
+    .video-container span {
+      display: block;
+      width: 160px; /* Match the video width */
+      font-size: 16px; /* Set font size */
+      line-height: 1.2em; /* Control line height */
+      color: #333; /* Text color */
+      margin-top: 5px; /* Space between video and text */
+      white-space: normal; /* Allow text to wrap */
+      word-break: break-word; /* Allow breaking long words */
+      min-height: 2.4em; /* Ensure enough height for two lines */
+      overflow: hidden; /* Hide any extra text */
+    }
+
+
+    .break {
+      width: 100%; /* Forces a line break */
+      margin-bottom: 20px; /* Adjust this value to increase the space */
+    }
+  </style>
+        
+      <div class="video-container">
+        <video id="log" width="160" height="300" autoplay controls muted loop playsinline>
+          <source src="./projects/ls-imagine/videos/log_demo.mp4" type="video/mp4">
+        </video>
+        <span>Harvest log in plains</span>
+      </div>
+      
+  
+      <div class="video-container">
+        <video id="water" width="160" height="300" autoplay controls muted loop playsinline>
+          <source src="./projects/ls-imagine/videos/water_demo.mp4" type="video/mp4">
+        </video>
+        <span>Harvest water with bucket</span>
+      </div>
+      
+  
+      <div class="video-container">
+        <video id="sand" width="160" height="300" autoplay controls muted loop playsinline>
+          <source src="./projects/ls-imagine/videos/sand_demo.mp4" type="video/mp4">
+        </video>
+        <span>Harvest sand</span>
+      </div>
+  
+  
+      <div class="video-container">
+        <video id="wool" width="160" height="300" autoplay controls muted loop playsinline>
+          <source src="./projects/ls-imagine/videos/wool_demo.mp4" type="video/mp4">
+        </video>
+        <span>Shear sheep</span>
+      </div>
+  
+  
+      <div class="video-container">
+        <video id="iron" width="160" height="300" autoplay controls muted loop playsinline>
+          <source src="./projects/ls-imagine/videos/iron_demo.mp4" type="video/mp4">
+        </video>
+        <span>Mine iron ore</span>
+      </div>
+  
+    <div class="break"></div> <!-- This will now provide more space between videos and text below -->
     <div class="columns is-centered">
     <div class="column is-two-thirds has-text-justified">
-      <!-- <h3 class="title is-4">Evaluation</h3> -->
-      <h2 class="title">Evaluation</h2>
       <p><b>Performance comparison of LS-Imagine against existing approaches in MineDojo.</b></p>
       <div class="has-text-centered">
-        <img src="./projects/ls-imagine/success_rate_with_barplot.png" alt="Performance comparison of LS-Imagine" style="width: 100%; max-width: 800px;">
+        <img src="./projects/ls-imagine/success_rate_with_barplot.png" alt="Performance comparison of LS-Imagine" style="width: 100%; max-width: 800px; margin-top: 5px;">
       </div>
     </div>
   </div>
-    <!-- <div class="column is-full-width">
-    </div>   -->
-<style>
-  .video-container {
-    display: inline-block; /* The container for video and text is inline-block, supporting horizontal alignment */
-    text-align: center; /* Center the text inside the container */
-    margin: 8px; /* Space between each video */
-  }
-  .video-container video {
-    display: block; /* Make the video a block element, so the text is placed below the video */
-  }
-  .video-container span {
-    display: block; /* Make the span a block element, ensuring the text sticks directly below the video */
-    /* margin-top: 5px; Controls the distance between the video and the text */
-    font-size: 12px; /* Set the font size of the text */
-    color: #333; /* Set the text color */
-  }
-  .break {
-    width: 100%; /* Forces a line break */
-  }
-</style>
   
-  <div class="break"></div>
-  <div class="columns is-centered">
-  <div class="column is-two-thirds has-text-justified">
-    <p><b>Showcases of in MineDojo.</b></p>
+    </div>
   </div>
-</div>
       
-    <div class="video-container">
-      <video id="log" width="160" height="300" autoplay controls muted loop playsinline>
-        <source src="./projects/ls-imagine/videos/log_demo.mp4" type="video/mp4">
-      </video>
-      <!-- <span>Harvest log in plains</span> -->
-    </div>
-    
-
-    <div class="video-container">
-      <video id="water" width="160" height="300" autoplay controls muted loop playsinline>
-        <source src="./projects/ls-imagine/videos/water_demo.mp4" type="video/mp4">
-      </video>
-      <!-- <span>Harvest water with bucket</span> -->
-    </div>
-    
-
-    <div class="video-container">
-      <video id="sand" width="160" height="300" autoplay controls muted loop playsinline>
-        <source src="./projects/ls-imagine/videos/sand_demo.mp4" type="video/mp4">
-      </video>
-      <!-- <span>Harvest sand</span> -->
-    </div>
-
-
-    <div class="video-container">
-      <video id="wool" width="160" height="300" autoplay controls muted loop playsinline>
-        <source src="./projects/ls-imagine/videos/wool_demo.mp4" type="video/mp4">
-      </video>
-      <!-- <span>Shear sheep</span> -->
-    </div>
-
-
-    <div class="video-container">
-      <video id="iron" width="160" height="300" autoplay controls muted loop playsinline>
-        <source src="./projects/ls-imagine/videos/iron_demo.mp4" type="video/mp4">
-      </video>
-      <!-- <span>Mine iron ore</span> -->
-    </div>
-
-  </div>
-</div>
-    
-
-  <section class="section" id="BibTeX" style="margin-top: 5px;">
-    <div class="container content">
-      <div class="columns is-centered">
-        <div class="column is-two-thirds has-text-justified">
-          <h2 class="title">BibTeX</h2>
-          <pre><code>@article{li2024open,
-  title={Open-World Reinforcement Learning over Long Short-Term Imagination}, 
-  author={Jiajian Li and Qi Wang and Yunbo Wang and Xin Jin and Yang Li and Wenjun Zeng and Xiaokang Yang},
-  journal={arXiv preprint arXiv:2410.03618},
-  year={2024}
-}
-</code></pre>
+  
+    <section class="section" id="BibTeX" style="margin-top: 0px;">
+      <div class="container content">
+        <div class="columns is-centered">
+          <div class="column is-two-thirds has-text-justified">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{li2024open,
+    title={Open-World Reinforcement Learning over Long Short-Term Imagination}, 
+    author={Jiajian Li and Qi Wang and Yunbo Wang and Xin Jin and Yang Li and Wenjun Zeng and Xiaokang Yang},
+    journal={arXiv preprint arXiv:2410.03618},
+    year={2024}
+  }
+  </code></pre>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-<section class="section" id="acknowledgements">
-    <div class="container content">
-      <div class="columns is-centered">
-        <div class="column is-two-thirds has-text-justified">
-          <h2 class="title">Acknowledgements</h2>
-          <p>This website adapted from <a href="http://nerfies.github.io/">Nerfies</a> template.</p>
+    </section>
+  
+  <section class="section" id="acknowledgements">
+      <div class="container content">
+        <div class="columns is-centered">
+          <div class="column is-two-thirds has-text-justified">
+            <h2 class="title">Acknowledgements</h2>
+            <p>This website adapted from <a href="http://nerfies.github.io/">Nerfies</a> template.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
-
-</body></html>
+    </section>
+  
+  
+  
+  </body></html>
+  
