@@ -19,6 +19,7 @@
   <script src="./projects/template/bulma-carousel.min.js"></script>
   <script src="./projects/template/index.js"></script>
 
+  
   <style>
     .swiper-container {
       width: 100%;
@@ -114,6 +115,8 @@
       background: #000;
       transform: scale(1.2);
     }
+
+
 
     /* 响应式调整 */
     @media (max-width: 768px) {
@@ -387,10 +390,11 @@
           return '<span class="' + className + '"></span>';
         },
       },
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 5000,
+      //   disableOnInteraction: false,
+      // },
+      autoplay: false,
       centeredSlides: false, /* 确保滑块不会居中显示 */
       watchOverflow: true,
       grabCursor: false,
