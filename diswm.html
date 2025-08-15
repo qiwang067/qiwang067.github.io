@@ -54,6 +54,9 @@
             <a class="navbar-item" href="https://qiwang067.github.io/ls-imagine">
               LS-Imagine
             </a>
+            <a class="navbar-item" href="https://qiwang067.github.io/coworld">
+              CoWorld
+            </a>
           </div>
         </div>
       </div>
@@ -73,7 +76,7 @@
               <span class="author-block">
                 <a href="https://qiwang067.github.io/" target="_blank">Qi Wang</a><sup>1,2,3*</sup>, </span>
               <span class="author-block">
-                <a href="" target="_blank">Zhipeng Zhang</a><sup>4,5*</sup>, </span>
+                <a href="https://scholar.google.com/citations?user=yzG0OdQAAAAJ&hl=zh-CN" target="_blank">Zhipeng Zhang</a><sup>4,5*</sup>, </span>
                 <span class="author-block">
                   <a href="" target="_blank">Baao Xie</a><sup>2,3*</sup>, </span>
                   <span class="author-block">
@@ -138,8 +141,16 @@
                   <span>Code</span>
                   </a>
               </span>
+
+              <span class="link-block">
+                  <a href="https://huggingface.co/datasets/MrSC320/DisWM-Pretrain-Datasets"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fa fa-database"></i>
+                    </span>
+                    <span>Datasets</span>
                   </a>
-                </span>
+              </span>
                  <!-- BibTex -->
               <!-- <span class="link-block">
                 <a href="#BibTeX"
@@ -189,22 +200,110 @@
 </div>
 </div>
 
-  <!-- <section class="section" id="BibTeX">
-    <div class="container content">
-      <div class="columns is-centered">
-        <div class="column is-two-thirds has-text-justified">
-          <h2 class="title">BibTeX</h2>
-          <pre><code>@inproceedings{wang2024making,
-  title={Making Offline RL Online: Collaborative World Models for Offline Visual Reinforcement Learning}, 
-  author={Qi Wang and Junming Yang and Yunbo Wang and Xin Jin and Wenjun Zeng and Xiaokang Yang},
-  booktitle={NeurIPS},
-  year={2024}
-}
-</code></pre>
-        </div>
+
+<div class="container">
+  <div class="column has-text-centered">
+    <div class="columns is-centered">
+    <div class="column is-two-thirds has-text-justified">
+      <!-- <h3 class="title is-4">Evaluation</h3> -->
+      <h2 class="title">Evaluation</h2>
+      <p><b>Showcases in Drawerworld.</b></p>
+    </div>
+  </div>
+    <!-- <div class="column is-full-width">
+    </div>   -->
+<style>
+  .video-container {
+    display: inline-block; /* The container for video and text is inline-block, supporting horizontal alignment */
+    text-align: center; /* Center the text inside the container */
+    margin: 10px; /* Space between each video */
+  }
+  .video-container video {
+    display: block; /* Make the video a block element, so the text is placed below the video */
+  }
+  .video-container span {
+    display: block; /* Make the span a block element, ensuring the text sticks directly below the video */
+    margin-top: 5px; /* Controls the distance between the video and the text */
+    font-size: 20px; /* Set the font size of the text */
+    color: #333; /* Set the text color */
+  }
+  .break {
+    width: 100%; /* Forces a line break */
+  }
+</style>
+
+    
+    <div class="video-container">
+      <video id="meatworld1" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/diswm/videos/diswm_drawer.mp4" type="video/mp4">
+      </video>
+      <span>DisWM</span>
+    </div>
+    
+  
+    <div class="video-container">
+      <video id="meatworld2" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/diswm/videos/tdmpc2_drawer.mp4" type="video/mp4">
+      </video>
+      <span>TD-MPC2</span>
+    </div>
+    
+  
+    <div class="video-container">
+      <video id="meatworld3" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/diswm/videos/contextwm_drawer.mp4" type="video/mp4">
+      </video>
+      <span>ContextWM</span>
+    </div>
+    
+  <!-- Force line break -->
+  <div class="break"></div>
+  <div class="columns is-centered">
+  <div class="column is-two-thirds has-text-justified">
+    <p><b>Showcases in DMC.</b></p>
+  </div>
+</div>
+    <div class="video-container">
+      <video id="dmc1" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/diswm/videos/diswm_human.mp4" type="video/mp4">
+      </video>
+      <span>DisWM</span>
+    </div>
+
+     <div class="video-container">
+      <video id="dmc2" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/diswm/videos/tdmpc2_human.mp4" type="video/mp4">
+      </video>
+      <span>TD-MPC2</span>
+    </div>
+
+     <div class="video-container">
+      <video id="dmc3" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/diswm/videos/contextwm_human.mp4" type="video/mp4">
+      </video>
+      <span>ContextWM</span>
+    </div>
+
+
+  </div>
+</div>
+</div>
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds has-text-justified">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@inproceedings{wang2025disentangled,
+title={Disentangled World Models: Learning to Transfer Semantic Knowledge from Distracting Videos for Reinforcement Learning}, 
+author={Qi Wang and Zhipeng Zhang and Baao Xie and Xin Jin and Yunbo Wang and Shiyu Wang and Liaomo Zheng and Xiaokang Yang and Wenjun Zeng},
+booktitle={ICCV},
+year={2025}
+}</code></pre>
       </div>
     </div>
-  </section> -->
+  </div>
+</section>
 
 <section class="section" id="acknowledgements">
     <div class="container content">
@@ -218,5 +317,3 @@
   </section>
 
 
-
-</body></html>
