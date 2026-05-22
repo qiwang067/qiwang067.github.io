@@ -177,7 +177,7 @@
       <div class="columns is-centered">
         <div class="column is-5"> <!-- Adjust the number after 'is' to change the image size -->
           <img id="teaser" height="30%" src="./projects/genreward/overview.png" alt="overview">
-          <h2 class="caption is-size-5 subtitle has-text-centered">
+          <h2 class="caption is-size-5 subtitle has-text-left">
            Overview of our proposed framework. The key idea is to leverage generated goal-conditioned videos for world knowledge transfer, enabling the downstream agent to improve performance on unseen tasks.
           </h2>
         </div>
@@ -201,6 +201,69 @@
   </section>
 
 
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-10">
+          <h2 class="title is-2">Pipeline</h2>
+          <img id="pipeline" width="80%" src="./projects/genreward/pipeline.png" alt="pipeline">
+          <h2 class="caption is-size-5 subtitle has-text-left" style="width: 80%; margin-left: auto; margin-right: auto;">
+            Pipeline of GenReward, which computes goal-driven rewards for behavior learning of the agent using generative prior. During online interaction with the environment, at regular intervals, we employ the correlation between the latent representations of the agent's observations and the generated goal videos as video-level rewards. Meanwhile, we learn a forward-backward model to measure the probability of reaching the goal state that is selected using CLIP from a given state-action pair, providing frame-level reward for fine-grained goal-achievement.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container">
+  <div class="column has-text-centered">
+    <div class="columns is-centered">
+    <div class="column is-two-thirds has-text-justified">
+      <h2 class="title">Evaluation</h2>
+      <p><b>Showcases in Meta-World.</b></p>
+    </div>
+  </div>
+<style>
+  .video-container {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+  }
+  .video-container video {
+    display: block;
+  }
+  .video-container span {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #333;
+  }
+</style>
+
+    <div class="video-container">
+      <video id="genreward-tadpole" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/genreward/TADPole.mp4" type="video/mp4">
+      </video>
+      <span>TADPole</span>
+    </div>
+
+    <div class="video-container">
+      <video id="genreward-diffusion-reward" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/genreward/Diffusion%20Reward.mp4" type="video/mp4">
+      </video>
+      <span>Diffusion Reward</span>
+    </div>
+
+    <div class="video-container">
+      <video id="genreward" width="200" height="200" autoplay controls muted loop playsinline>
+        <source src="./projects/genreward/GenReward.mp4" type="video/mp4">
+      </video>
+      <span>GenReward</span>
+    </div>
+
+  </div>
+</div>
 
 
 
