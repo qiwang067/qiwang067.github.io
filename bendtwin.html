@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BendTwin reconstructs deformable objects from sparse-view RGB-D videos with bending-aware differentiable spring-mass models, improving reconstruction and future prediction.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BendTwin — Bending-Aware Physical Reconstruction">
+  <meta property="og:description" content="Robust Dense-to-Sparse Physical Reconstruction with Bending-Aware Differentiable Spring-Mass Models. NeurIPS 2026 Workshop (PUDM), Oral.">
+  <meta property="og:image" content="https://qiwang067.github.io/projects/bendtwin/overview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f4f0e8">
+  <title>BendTwin | Bending-Aware Physical Reconstruction</title>
+  <link rel="stylesheet" href="projects/bendtwin/style.css">
+  <script src="projects/bendtwin/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="project-name" href="#top">BendTwin<span class="status-dot" aria-hidden="true"></span></a>
+      <nav aria-label="Project sections">
+        <a href="#method">Method</a><a href="#results">Results</a><a href="#BibTeX">Citation</a>
+      </nav>
+      <a class="nav-paper" href="https://arxiv.org/abs/2608.06164" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="hero panel" id="top" aria-labelledby="paper-title">
+      <div class="hero-copy">
+        <div class="eyebrow">Differentiable physics <span aria-hidden="true">/</span> Research project</div>
+        <h1 id="paper-title"><span class="title-name">BendTwin:</span> Robust Dense-to-Sparse Physical Reconstruction with Bending-Aware Differentiable Spring-Mass Models</h1>
+        <p class="venue"><a href="https://sites.google.com/view/neurips-2026-workshop-pudm" target="_blank" rel="noopener noreferrer">NeurIPS 2026 Workshop (PUDM)</a><span class="venue-divider" aria-hidden="true">/</span><strong><em>Oral</em></strong></p>
+        <div class="authors">
+          <span><a href="https://cv4dt.github.io/author/dr-yixiong-jing/">Yixiong Jing</a><sup>1,*</sup>,</span>
+          <span><a href="https://qiwang067.github.io/">Qi Wang</a><sup>2,*</sup>,</span>
+          <span>Lin Chen<sup>3</sup>,</span>
+          <span>Junwei Jiang<sup>4</sup>,</span>
+          <span><a href="https://guangmingw.github.io/">Guangming Wang</a><sup>1,†</sup>,</span>
+          <span>Haibing Wu<sup>1</sup>,</span>
+          <span><a href="https://olafwysocki.github.io/">Olaf Wysocki</a><sup>1</sup>,</span>
+          <span>Wanli Ma<sup>1</sup>,</span>
+          <span><a href="https://www.construction.cam.ac.uk/staff/dr-brian-sheil">Brian Sheil</a><sup>1</sup></span>
+        </div>
+        <div class="affiliations">
+          <span><sup>1</sup> University of Cambridge</span>
+          <span><sup>2</sup> Institute of Automation, Chinese Academy of Sciences</span>
+          <span><sup>3</sup> Northwestern Polytechnical University</span>
+          <span><sup>4</sup> The Hong Kong Polytechnic University</span>
+        </div>
+        <p class="contributions">* Equal contribution &nbsp; · &nbsp; † Corresponding author</p>
+        <div class="institution-logos" role="group" aria-label="Author institutions">
+          <a href="https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer" title="University of Cambridge">
+            <img src="projects/bendtwin/logos/cambridge.webp" width="500" height="104" alt="University of Cambridge">
+          </a>
+          <a href="https://english.ia.cas.cn/" target="_blank" rel="noopener noreferrer" title="Institute of Automation, Chinese Academy of Sciences">
+            <img src="projects/bendtwin/logos/casia.jpg" width="510" height="82" alt="Institute of Automation, Chinese Academy of Sciences">
+          </a>
+          <a href="https://en.nwpu.edu.cn/" target="_blank" rel="noopener noreferrer" title="Northwestern Polytechnical University">
+            <img class="institution-seal" src="projects/bendtwin/logos/nwpu.jpg" width="547" height="504" alt="Northwestern Polytechnical University">
+          </a>
+          <a href="https://www.polyu.edu.hk/" target="_blank" rel="noopener noreferrer" title="The Hong Kong Polytechnic University">
+            <img src="projects/bendtwin/logos/polyu.png" width="1002" height="192" alt="The Hong Kong Polytechnic University">
+          </a>
+        </div>
+        <div class="resource-links">
+          <a class="button primary" href="https://arxiv.org/pdf/2608.06164" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+          <a class="button" href="https://arxiv.org/abs/2608.06164" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a>
+          <a class="button" href="#BibTeX">BibTeX <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <aside class="specimen" aria-labelledby="specimen-title">
+        <div class="specimen-label"><span>Local mechanics / 01</span><span class="status-dot" aria-hidden="true"></span></div>
+        <svg class="mechanics" viewBox="0 0 320 310" role="img" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">A bending constraint over three surface nodes</title>
+          <desc id="diagram-desc">Two axial springs connect nodes i and k to central node j. A bending constraint penalizes the difference between their current angle and rest angle.</desc>
+          <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#c8cdc5"/></pattern></defs>
+          <rect x="0" y="0" width="320" height="310" fill="url(#grid)"/>
+          <path d="M42 244 L107 142 L203 85 L285 144 L258 245 Z M42 244 L164 222 L285 144 M107 142 L164 222 L203 85 M164 222 L258 245" fill="none" stroke="#c5d0c7" stroke-width="1.5"/>
+          <path d="M59 93 L164 222 L265 99" fill="none" stroke="#89988c" stroke-width="2" stroke-dasharray="5 6"/>
+          <path d="M80 125 L164 222 L258 151" fill="none" stroke="#176b67" stroke-width="4" stroke-linecap="round"/>
+          <path d="M135 189 A44 44 0 0 1 199 195" fill="none" stroke="#8c1515" stroke-width="3"/>
+          <circle cx="80" cy="125" r="10" fill="#fffdf8" stroke="#176b67" stroke-width="3"/>
+          <circle cx="164" cy="222" r="11" fill="#8c1515" stroke="#fffdf8" stroke-width="3"/>
+          <circle cx="258" cy="151" r="10" fill="#fffdf8" stroke="#176b67" stroke-width="3"/>
+          <g fill="#172126" font-family="Georgia, serif" font-size="23" font-style="italic"><text x="57" y="117">i</text><text x="156" y="258">j</text><text x="276" y="157">k</text><text x="158" y="176" fill="#8c1515">θ</text></g>
+          <text x="25" y="33" fill="#58666c" font-family="monospace" font-size="10" letter-spacing="1.5">SURFACE TRIPLET (i, j, k)</text>
+          <text x="95" y="291" fill="#58666c" font-family="monospace" font-size="10">CONCEPTUAL ILLUSTRATION</text>
+        </svg>
+        <h2 id="specimen-title">More than<br>stretch &amp; compress.</h2>
+        <p>Axial springs preserve lengths.<br>Bending constraints preserve local angles.</p>
+        <div class="equation" aria-label="Bending energy equals one half times bending stiffness times the squared deviation from the rest angle">E<sub>bend</sub> = ½ k<sub>θ</sub> (θ − θ<sub>0</sub>)²</div>
+        <div class="legend"><span><i class="line axial"></i>Axial spring</span><span><i class="line bending"></i>Bending</span></div>
+      </aside>
+    </section>
+
+    <section class="overview" aria-labelledby="overview-title">
+      <div class="section-heading"><div><p class="eyebrow">From observation to a physical twin</p><h2 id="overview-title">Reconstruct. Simulate. Predict.</h2></div><span class="figure-index">FIG. 01</span></div>
+      <figure class="paper-figure">
+        <a href="projects/bendtwin/overview.png" target="_blank" rel="noopener noreferrer" aria-label="Open overview figure at full resolution"><img src="projects/bendtwin/overview.jpg" width="2400" height="773" alt="BendTwin overview: three RGB-D camera views of a sloth toy, its bending-aware spring-mass representation, and simulated deformation results." fetchpriority="high"></a>
+        <figcaption>Sparse-view RGB-D observations become a deformable digital twin through a bending-aware spring–mass model. <a href="projects/bendtwin/overview.png" target="_blank" rel="noopener noreferrer">View full resolution ↗</a></figcaption>
+      </figure>
+      <div class="highlights" aria-label="Selected paper results">
+        <div><span class="stat">19.0<span>%</span></span><p>Lower reconstruction<br>Chamfer distance</p></div>
+        <div><span class="stat">16.8<span>%</span></span><p>Lower future-prediction<br>Chamfer distance</p></div>
+        <div><span class="stat">5<span>%</span></span><p>Graph sampling ratio<br>tested in sparse ablations</p></div>
+      </div>
+      <p class="metric-note">Error reductions compare BendTwin with PhysTwin on the paper’s non-cloth evaluation set (Table 1). Sampling ratio is from Table 2.</p>
+    </section>
+
+    <section class="chapter panel" id="method" aria-labelledby="method-title">
+      <div class="chapter-tab"><span>01</span> Construct the twin</div>
+      <p class="eyebrow">The idea</p>
+      <h2 id="method-title">Give sparse models a sense of bending.</h2>
+      <div class="abstract-grid">
+        <h3>Abstract</h3>
+        <div class="prose"><p>Reconstructing deformable objects from video requires a model of how they move, not just how they look. Conventional spring–mass systems constrain distances between pairs of nodes, but can lose local shape stability as the physical graph becomes sparse.</p><p>BendTwin adds bending stiffness and damping over local surface triplets. By penalizing deviations from rest angles and damping angular motion, it improves reconstruction and future prediction while retaining a differentiable spring–mass formulation. Experiments and ablations evaluate these constraints under graph downsampling and in a surface-only configuration.</p></div>
+      </div>
+      <figure class="paper-figure inset">
+        <a href="projects/bendtwin/pipeline.png" target="_blank" rel="noopener noreferrer" aria-label="Open method diagram at full resolution"><img src="projects/bendtwin/pipeline.jpg" width="2600" height="1068" alt="BendTwin pipeline: reconstruct surface points from RGB-D observations, add axial springs and bending triplets, optimize geometry and tracking losses, and run differentiable explicit simulation." loading="lazy"></a>
+        <figcaption>From surface reconstruction to mechanical parameter optimization and differentiable simulation. <a href="projects/bendtwin/pipeline.png" target="_blank" rel="noopener noreferrer">View full resolution ↗</a></figcaption>
+      </figure>
+      <div class="method-grid">
+        <article><span class="step-number">01 / Represent</span><h3>Local bending triplets</h3><p>Surface nodes carry axial springs and angular constraints. Bending stiffness resists changes from each triplet’s rest angle.</p></article>
+        <article><span class="step-number">02 / Optimize</span><h3>Learn from motion</h3><p>Geometry and tracking losses fit the mechanical parameters to observed motion. Bending damping dissipates angular oscillation.</p></article>
+        <article><span class="step-number">03 / Predict</span><h3>Simulate forward</h3><p>A differentiable explicit Euler simulator rolls the fitted model forward, from observed reconstruction to unseen future frames.</p></article>
+      </div>
+    </section>
+
+    <section class="chapter panel results-chapter" id="results" aria-labelledby="results-title">
+      <div class="chapter-tab"><span>02</span> Verify the twin</div>
+      <p class="eyebrow">Experiments &amp; evidence</p>
+      <h2 id="results-title">Better geometry. More faithful motion.</h2>
+      <p class="section-intro">Evaluated on non-cloth deformable objects from the PhysTwin benchmark. The first 70% of each sequence is used for reconstruction and re-simulation; the remaining 30% tests future prediction.</p>
+      <figure class="paper-figure inset">
+        <a href="projects/bendtwin/results.png" target="_blank" rel="noopener noreferrer" aria-label="Open qualitative comparison at full resolution"><img src="projects/bendtwin/results.jpg" width="2800" height="1643" alt="Qualitative reconstruction and future-prediction comparisons between ground truth, PhysTwin, and BendTwin. Red boxes highlight differences in local object deformation." loading="lazy"></a>
+        <figcaption>Qualitative comparison from Figure 3. Red boxes mark regions where BendTwin better matches observed deformation. <a href="projects/bendtwin/results.png" target="_blank" rel="noopener noreferrer">View full resolution ↗</a></figcaption>
+      </figure>
+      <div class="section-heading table-heading"><h3>Quantitative comparison</h3><a class="source-link" href="https://arxiv.org/html/2608.06164v1#S3.T1" target="_blank" rel="noopener noreferrer">Paper · Table 1 ↗</a></div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Reconstruction and re-simulation results; scroll horizontally on small screens">
+        <table><caption>Reconstruction &amp; re-simulation</caption><thead><tr><th scope="col">Method</th><th scope="col">CD ↓</th><th scope="col">Track ↓</th><th scope="col">IoU (%) ↑</th><th scope="col">PSNR ↑</th><th scope="col">SSIM ↑</th><th scope="col">LPIPS ↓</th></tr></thead><tbody>
+          <tr><th scope="row">PhysTwin</th><td>0.0058</td><td>0.0091</td><td>79.5</td><td>28.429</td><td>0.963</td><td>0.022</td></tr>
+          <tr class="ours"><th scope="row">BendTwin <span>Ours</span></th><td>0.0047</td><td>0.0078</td><td>80.6</td><td>28.605</td><td>0.963</td><td>0.021</td></tr>
+        </tbody></table>
+      </div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Future prediction results; scroll horizontally on small screens">
+        <table><caption>Future prediction</caption><thead><tr><th scope="col">Method</th><th scope="col">CD ↓</th><th scope="col">Track ↓</th><th scope="col">IoU (%) ↑</th><th scope="col">PSNR ↑</th><th scope="col">SSIM ↑</th><th scope="col">LPIPS ↓</th></tr></thead><tbody>
+          <tr><th scope="row">PhysTwin</th><td>0.0095</td><td>0.0166</td><td>68.7</td><td>26.412</td><td>0.957</td><td>0.036</td></tr>
+          <tr class="ours"><th scope="row">BendTwin <span>Ours</span></th><td>0.0079</td><td>0.0153</td><td>71.5</td><td>26.755</td><td>0.957</td><td>0.035</td></tr>
+        </tbody></table>
+      </div>
+      <p class="metric-note">↓ Lower is better. ↑ Higher is better. CD: Chamfer distance; Track: tracking error. Values reproduced from Table 1 of the paper.</p>
+      <div class="ablation"><span class="eyebrow">Dense → sparse</span><h3>Fewer nodes, with bending constraints.</h3><p>Matched-graph ablations test sampling ratios of 0.1 and 0.05. BendTwin improves on the axial-only baseline as connectivity is reduced. A separate experiment removes all interior nodes to examine a surface-only physical representation.</p><a href="https://arxiv.org/html/2608.06164v1#S3.SS3" target="_blank" rel="noopener noreferrer">Read the ablation studies <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="chapter panel citation-chapter" id="BibTeX" aria-labelledby="citation-title">
+      <div class="chapter-tab"><span>03</span> Cite the work</div>
+      <div class="section-heading"><div><p class="eyebrow">Reference</p><h2 id="citation-title">BibTeX</h2></div><button class="button copy-button" type="button" id="copy-citation" hidden>Copy citation</button></div>
+      <pre tabindex="0" aria-label="BibTeX citation"><code id="citation">@article{jing2026bendtwin,
+  title={BendTwin: Robust Dense-to-Sparse Physical Reconstruction
+         with Bending-Aware Differentiable Spring-Mass Models},
+  author={Jing, Yixiong and Wang, Qi and Chen, Lin and Jiang, Junwei
+          and Wang, Guangming and Wu, Haibing and Wysocki, Olaf
+          and Ma, Wanli and Sheil, Brian},
+  journal={arXiv preprint arXiv:2608.06164},
+  year={2026},
+  url={https://arxiv.org/abs/2608.06164}
+}</code></pre>
+      <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <footer class="site-footer"><div><a class="footer-brand" href="#top">BendTwin</a><p>Bending-aware physical reconstruction.</p></div><p>Figures and results from the <a href="https://arxiv.org/abs/2608.06164">BendTwin paper</a>.<br>Visual design inspired by <a href="https://jianghanxiao.github.io/phystwin-web/">PhysTwin</a>.</p><a href="mailto:qiwang068@gmail.com">Contact ↗</a></footer>
+</body>
+</html>
