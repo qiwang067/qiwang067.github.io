@@ -24,3 +24,17 @@ if (copyButton && citation && copyStatus) {
     }
   });
 }
+
+const moreResearch = document.querySelector('.more-research');
+if (moreResearch) {
+  document.addEventListener('click', (event) => {
+    if (!moreResearch.contains(event.target)) moreResearch.open = false;
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && moreResearch.open) {
+      const focusWasInside = moreResearch.contains(document.activeElement);
+      moreResearch.open = false;
+      if (focusWasInside) moreResearch.querySelector('summary').focus();
+    }
+  });
+}
