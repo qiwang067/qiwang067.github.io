@@ -148,3 +148,31 @@
   .site-header nav { flex-wrap: wrap; align-items: center; }
   .more-research summary { font-size: 12px; }
 }
+
+/* Return to the top after scrolling */
+.back-to-top {
+  position: fixed;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--brand);
+  box-shadow: 0 4px 16px #241f1a20;
+  font-size: 24px;
+  line-height: 1;
+}
+.back-to-top:hover { background: var(--brand); color: var(--surface); }
+@media (max-width: 760px) {
+  .back-to-top {
+    right: max(16px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+  }
+}
+@media print { .back-to-top { display: none; } }

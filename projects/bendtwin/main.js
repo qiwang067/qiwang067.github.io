@@ -38,3 +38,21 @@ if (moreResearch) {
     }
   });
 }
+
+const backToTop = document.getElementById('back-to-top');
+if (backToTop) {
+  const updateBackToTop = () => {
+    backToTop.hidden = window.scrollY <= 300;
+  };
+  window.addEventListener('scroll', updateBackToTop, { passive: true });
+  window.addEventListener('pageshow', updateBackToTop);
+  updateBackToTop();
+  backToTop.addEventListener('click', () => {
+    const topLink = document.querySelector('.project-name');
+    if (topLink) topLink.focus({ preventScroll: true });
+    window.scrollTo({
+      top: 0,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+    });
+  });
+}
