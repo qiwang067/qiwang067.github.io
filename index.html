@@ -11,6 +11,94 @@
 <title>Qi Wang (王琦)</title>
 <style>
 a:link{color:#224B8D}
+.profile-details {
+  vertical-align: top;
+}
+.profile-name {
+  margin-bottom: 7px;
+  line-height: 1.1;
+}
+.profile-role {
+  margin-bottom: 9px;
+  line-height: 1.35;
+}
+.profile-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 16px;
+  margin: 8px 0;
+  line-height: 1.35;
+}
+.profile-contact strong {
+  margin-right: -8px;
+}
+.social-links {
+  margin: 7px 0 0;
+  line-height: 1;
+}
+.social-links img {
+  max-height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 2px 0 8px;
+}
+.section-nav a:link,
+.section-nav a:visited {
+  padding: 4px 10px;
+  border: 1px solid #d5deea;
+  border-radius: 14px;
+  background: #f6f8fb;
+  color: #224B8D;
+  font-size: 0.92em;
+  line-height: 1.35;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.section-nav a:hover,
+.section-nav a:focus {
+  border-color: #224B8D;
+  background: #eaf0f8;
+}
+#back_top {
+  appearance: none;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #315fa4, #183f79);
+  box-shadow: 0 7px 18px rgba(22, 56, 105, 0.28);
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+#back_top:hover {
+  background: linear-gradient(145deg, #3d70b8, #224B8D);
+  box-shadow: 0 10px 24px rgba(22, 56, 105, 0.36);
+  transform: translateY(-3px);
+}
+#back_top:focus-visible {
+  outline: 3px solid rgba(49, 95, 164, 0.28);
+  outline-offset: 3px;
+}
+.back-top-icon {
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin: 5px auto 0;
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  transform: rotate(45deg);
+}
 </style>
 </head>
  
@@ -22,31 +110,32 @@ a:link{color:#224B8D}
 
 <table class="imgtable"><tr><td>
 <a href="./"><img src="./Files/Wang_photo_2022.jpg" alt="" height="160px" style="border-radius: 5px;"/></a>&nbsp;</td>
-<td align="left"><p>
+<td align="left" class="profile-details">
+<div class="profile-name">
 <a href="./" style="color:#224B8D">
 <strong><font size="5.99"> Qi WANG</font></strong><font size="5.99"> (</font><strong><font size="5.99">王琦</font></strong><font size="5.99">)</font>
 <!-- <font size="4">Qi Wang (</font><font size="4"; font style="font-family:Microsoft YaHei">王琦</font><font size="4">)</font> -->
 </a>
 <!-- <a href="https://www.cs.ox.ac.uk/people/yiyuan.yang/" target="_blank" style="color:#224B8D">Official Website</a> -->
-<br /><br />
-Assistant Professor,
-<a href="https://english.ia.cas.cn/" target="_blank" style="color:#224B8D">Institute of Automation, Chinese Academy of Sciences</a>
-<br />
-<br />
-<class="staffshortcut">
-<A HREF="#News" style="color:#224B8D">Biography </A> | 
- <A HREF="#Interest" style="color:#224B8D">Research Interest </A> |
- <A HREF="#Education" style="color:#224B8D">Education</A> |
- <A HREF="#Publications" style="color:#224B8D">Publications</A> |
- <A HREF="#Projects" style="color:#224B8D">Projects</A> |
- <A HREF="#Students" style="color:#224B8D">Students</A> |
- <A HREF="#Honors and awards" style="color:#224B8D">Honors and Awards</A> |
- <A HREF="#Services and activities" style="color:#224B8D">Services and Activities</A> | 
- <A HREF="#Invited talks and lives" style="color:#224B8D">Invited Talks and Lives</A>
-<br />
-<br />
- 
-Email: qiwang068@gmail.com (prior) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; qiwang067@sjtu.edu.cn &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wangqi194@mails.ucas.edu.cn <br />
+</div>
+<div class="profile-role">Assistant Professor, <a href="https://english.ia.cas.cn/" target="_blank" style="color:#224B8D">Institute of Automation, Chinese Academy of Sciences</a></div>
+<div class="section-nav">
+  <a href="#News">About Me</a>
+  <a href="#Interest">Research</a>
+  <a href="#Education">Experience</a>
+  <a href="#Publications">Publications</a>
+  <a href="#Projects">Projects</a>
+  <a href="#Students">Students</a>
+  <a href="#Honors and awards">Honors</a>
+  <a href="#Services and activities">Service</a>
+  <a href="#Invited talks and lives">Talks</a>
+</div>
+<div class="profile-contact">
+  <strong>Email:</strong>
+  <span>qiwang068@gmail.com (prior)</span>
+  <span>qiwang067@sjtu.edu.cn</span>
+  <span>wangqi194@mails.ucas.edu.cn</span>
+</div>
 
 <!-- <a href="" target="_blank" style="color:#224B8D">Google Scholar</a> |
 <a href="https://github.com/qiwang067" target="_blank" style="color:#224B8D">GitHub</a>  
@@ -55,7 +144,7 @@ Email: qiwang068@gmail.com (prior) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; qiwang06
 <a href="https://www.xiaohongshu.com/user/profile/6606c9ca000000000600df52" target="_blank" style="color:#224B8D">XiaoHongShu</a> |
 <a href="https://twitter.com/qiwang067" target="_blank" style="color:#224B8D">Twitter</a> -->
 
-<p  style="margin-top: 20px;">
+<div class="social-links">
 					<!-- Computer Science and Technology,
 					<a href="https://csse.szu.edu.cn/" target="_blank">CSSE</a>,<br>
 					<a href="https://en.szu.edu.cn/" target="_blank">Shenzhen University (SZU)</a><br> -->
@@ -80,12 +169,12 @@ Email: qiwang068@gmail.com (prior) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; qiwang06
 					<!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftianxingchen.github.io&count_bg=%233FDBD2&title_bg=%233D62C7&icon=googlepodcasts.svg&icon_color=%23E9F742&title=Page+Viewers&edge_flat=false"/></a> -->
 					<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fqiwang067.github.io%2F"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fqiwang067.github.io%2F&labelColor=%232ccce4&countColor=%230158f9" /></a>
 					<!-- <img alt="X (formerly Twitter) Follow" src="https://img.shields.io/twitter/follow/MarioChan2002"> -->
-				</p>
+				</div>
 
 <!-- [<a href="./Files/weixin.jpeg" target="_blank" style="color:#224B8D">Wechat</a>] -->
 </td></tr></table>
 
-<A NAME="News"><h2>Biography</h2></A>
+<A NAME="News"><h2>About Me</h2></A>
 Qi Wang is an Assistant Professor at the <a href="https://english.ia.cas.cn/" target="_blank" style="color:#224B8D">Institute of Automation, Chinese Academy of Sciences</a>, where he collaborates with <a href="https://scholar.google.com/citations?user=d-tAMlYAAAAJ&hl=en" target="_blank" style="color:#224B8D">Professor Dajun Zeng</a> (IEEE Fellow, AAAS Fellow, and Deputy Director of the Institute). He received his Ph.D. from Shanghai Jiao Tong University in 2026. Qi's research focuses on reinforcement learning, computer vision, and world models. He has published several papers at top-tier conferences, including NeurIPS, CVPR, ICLR, ICCV, and CoRL, with one selected for oral presentation. He is also an avid open-source contributor, with projects amassing over 30,000 GitHub stars. He has authored two bestselling books based on his tutorials.
 He is the chief organizer of <a href="https://embodied-world-models.github.io/" target="_blank" style="color:#224B8D">NeurIPS 2025 Workshop on Embodied World Models for Decision Making</a>.
 
@@ -497,7 +586,7 @@ in Saint Petersburg, Russia, 2021.
 <font size="3"> 
 <ul>
 <li>
-2026, Outstanding Graduate of Shanghai.
+2026, <b>Outstanding Graduate of Shanghai</b>.
 </li> 
 <li>
 2025, Zhefu Tao Scholarship, Shanghai Jiao Tong University.
@@ -743,10 +832,9 @@ in Saint Petersburg, Russia, 2021.
 
  
 <div id="article"></div>
-<div id="back_top">
-<div class="arrow"></div>
-<div class="stick"></div>
-</div>
+<button id="back_top" type="button" aria-label="Back to top" title="Back to top">
+  <span class="back-top-icon" aria-hidden="true"></span>
+</button>
 
 <script>
 $(function(){
