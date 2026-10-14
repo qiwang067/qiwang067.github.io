@@ -93,8 +93,12 @@ a[name] {
 .container {
   box-shadow: none;
 }
-.profile-details {
-  vertical-align: top;
+table.imgtable td.profile-photo,
+table.imgtable td.profile-details {
+  vertical-align: middle;
+}
+.profile-photo img {
+  vertical-align: middle;
 }
 .profile-name {
   margin-bottom: 7px;
@@ -184,7 +188,7 @@ a[name] {
 <div id="container"> 
 <div class="container"> 
 
-<table class="imgtable"><tr><td>
+<table class="imgtable"><tr><td class="profile-photo">
 <a href="./"><img src="./Files/Wang_photo_2022.jpg" alt="" height="160px" style="border-radius: 5px;"/></a>&nbsp;</td>
 <td align="left" class="profile-details">
 <div class="profile-name">
