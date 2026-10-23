@@ -4,6 +4,7 @@
 <meta name="robots" content="index, follow" />
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="keywords" content="Qi Wang, 王琦, reinforcement learning, computer vision, deep learning, machine learning, Institute of Automation Chinese Academy of Sciences, 中国科学院自动化研究所, Shanghai Jiao Tong University, 上海交通大学">
 <link rel="stylesheet" href="./Files/jemdoc.css" type="text/css" />
 <script src="jquery.min.js"></script>
@@ -11,42 +12,200 @@
 <title>Qi Wang (王琦)</title>
 <style>
 a:link{color:#224B8D}
+html {
+  scroll-behavior: smooth;
+}
+a[name] {
+  scroll-margin-top: 62px;
+}
+.site-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1100;
+  height: 50px;
+  background: #224B8D;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.site-nav-inner {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1008px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+.site-nav-brand:link,
+.site-nav-brand:visited {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 1.16em;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-nav-links {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+}
+.site-nav-links::-webkit-scrollbar {
+  display: none;
+}
+.site-nav-links a:link,
+.site-nav-links a:visited {
+  flex: 0 0 auto;
+  padding: 15px 8px 14px;
+  color: #e7edf7;
+  font-size: 1em;
+  line-height: 20px;
+  text-decoration: none;
+}
+.site-nav-links a:hover,
+.site-nav-links a:focus {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+@media (max-width: 640px) {
+  .site-nav-inner {
+    padding: 0 10px;
+  }
+  .site-nav-brand:link,
+  .site-nav-brand:visited {
+    margin-right: 10px;
+  }
+  .site-nav-links a:link,
+  .site-nav-links a:visited {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+}
+.container {
+  box-shadow: none;
+}
+table.imgtable td.profile-photo,
+table.imgtable td.profile-details {
+  vertical-align: middle;
+}
+.profile-photo img {
+  vertical-align: middle;
+}
+.profile-name {
+  margin-bottom: 7px;
+  line-height: 1.1;
+}
+.profile-role {
+  margin-bottom: 9px;
+  line-height: 1.35;
+}
+.profile-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 16px;
+  margin: 8px 0;
+  line-height: 1.35;
+}
+.profile-contact strong {
+  margin-right: -8px;
+}
+.social-links {
+  margin: 7px 0 0;
+  line-height: 1;
+}
+.social-links img {
+  max-height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
+
+#back_top {
+  appearance: none;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #315fa4, #183f79);
+  box-shadow: 0 7px 18px rgba(22, 56, 105, 0.28);
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+#back_top:hover {
+  background: linear-gradient(145deg, #3d70b8, #224B8D);
+  box-shadow: 0 10px 24px rgba(22, 56, 105, 0.36);
+  transform: translateY(-3px);
+}
+#back_top:focus-visible {
+  outline: 3px solid rgba(49, 95, 164, 0.28);
+  outline-offset: 3px;
+}
+.back-top-icon {
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin: 5px auto 0;
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  transform: rotate(45deg);
+}
 </style>
 </head>
  
 <body>
 
+<div class="site-nav" role="navigation" aria-label="Primary navigation">
+  <div class="site-nav-inner">
+    <a class="site-nav-brand" href="#home">Qi Wang</a>
+    <div class="site-nav-links">
+      <a href="#News">About Me</a>
+      <a href="#Interest">Research Interest</a>
+      <a href="#Education">Education</a>
+      <a href="#Publications">Publications</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Students">Students</a>
+      <a href="#Honors and awards">Honors</a>
+      <a href="#Services and activities">Service</a>
+      <a href="#Invited talks and lives">Talks</a>
+    </div>
+  </div>
+</div>
 <a id="home" class="anchor"></a>
 <div id="container"> 
 <div class="container"> 
 
-<table class="imgtable"><tr><td>
+<table class="imgtable"><tr><td class="profile-photo">
 <a href="./"><img src="./Files/Wang_photo_2022.jpg" alt="" height="160px" style="border-radius: 5px;"/></a>&nbsp;</td>
-<td align="left"><p>
+<td align="left" class="profile-details">
+<div class="profile-name">
 <a href="./" style="color:#224B8D">
 <strong><font size="5.99"> Qi WANG</font></strong><font size="5.99"> (</font><strong><font size="5.99">王琦</font></strong><font size="5.99">)</font>
 <!-- <font size="4">Qi Wang (</font><font size="4"; font style="font-family:Microsoft YaHei">王琦</font><font size="4">)</font> -->
 </a>
 <!-- <a href="https://www.cs.ox.ac.uk/people/yiyuan.yang/" target="_blank" style="color:#224B8D">Official Website</a> -->
-<br /><br />
-Assistant Professor,
-<a href="https://english.ia.cas.cn/" target="_blank" style="color:#224B8D">Institute of Automation, Chinese Academy of Sciences</a>
-<br />
-<br />
-<class="staffshortcut">
-<A HREF="#News" style="color:#224B8D">Biography </A> | 
- <A HREF="#Interest" style="color:#224B8D">Research Interest </A> |
- <A HREF="#Education" style="color:#224B8D">Education</A> |
- <A HREF="#Publications" style="color:#224B8D">Publications</A> |
- <A HREF="#Projects" style="color:#224B8D">Projects</A> |
- <A HREF="#Students" style="color:#224B8D">Students</A> |
- <A HREF="#Honors and awards" style="color:#224B8D">Honors and Awards</A> |
- <A HREF="#Services and activities" style="color:#224B8D">Services and Activities</A> | 
- <A HREF="#Invited talks and lives" style="color:#224B8D">Invited Talks and Lives</A>
-<br />
-<br />
- 
-Email: qiwang068@gmail.com (prior) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; qiwang067@sjtu.edu.cn &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wangqi194@mails.ucas.edu.cn <br />
+</div>
+<div class="profile-role">Assistant Professor, <a href="https://english.ia.cas.cn/" target="_blank" style="color:#224B8D">Institute of Automation, Chinese Academy of Sciences</a></div>
+
+<div class="profile-contact">
+  <strong>Email:</strong>
+  <span>qiwang068@gmail.com (prior)</span>
+  <span>qiwang067@sjtu.edu.cn</span>
+  <span>wangqi194@mails.ucas.edu.cn</span>
+</div>
 
 <!-- <a href="" target="_blank" style="color:#224B8D">Google Scholar</a> |
 <a href="https://github.com/qiwang067" target="_blank" style="color:#224B8D">GitHub</a>  
@@ -55,7 +214,7 @@ Email: qiwang068@gmail.com (prior) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; qiwang06
 <a href="https://www.xiaohongshu.com/user/profile/6606c9ca000000000600df52" target="_blank" style="color:#224B8D">XiaoHongShu</a> |
 <a href="https://twitter.com/qiwang067" target="_blank" style="color:#224B8D">Twitter</a> -->
 
-<p  style="margin-top: 20px;">
+<div class="social-links">
 					<!-- Computer Science and Technology,
 					<a href="https://csse.szu.edu.cn/" target="_blank">CSSE</a>,<br>
 					<a href="https://en.szu.edu.cn/" target="_blank">Shenzhen University (SZU)</a><br> -->
@@ -80,12 +239,12 @@ Email: qiwang068@gmail.com (prior) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; qiwang06
 					<!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftianxingchen.github.io&count_bg=%233FDBD2&title_bg=%233D62C7&icon=googlepodcasts.svg&icon_color=%23E9F742&title=Page+Viewers&edge_flat=false"/></a> -->
 					<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fqiwang067.github.io%2F"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fqiwang067.github.io%2F&labelColor=%232ccce4&countColor=%230158f9" /></a>
 					<!-- <img alt="X (formerly Twitter) Follow" src="https://img.shields.io/twitter/follow/MarioChan2002"> -->
-				</p>
+				</div>
 
 <!-- [<a href="./Files/weixin.jpeg" target="_blank" style="color:#224B8D">Wechat</a>] -->
 </td></tr></table>
 
-<A NAME="News"><h2>Biography</h2></A>
+<A NAME="News"><h2>About Me</h2></A>
 Qi Wang is an Assistant Professor at the <a href="https://english.ia.cas.cn/" target="_blank" style="color:#224B8D">Institute of Automation, Chinese Academy of Sciences</a>, where he collaborates with <a href="https://scholar.google.com/citations?user=d-tAMlYAAAAJ&hl=en" target="_blank" style="color:#224B8D">Professor Dajun Zeng</a> (IEEE Fellow, AAAS Fellow, and Deputy Director of the Institute). He received his Ph.D. from Shanghai Jiao Tong University in 2026. Qi's research focuses on reinforcement learning, computer vision, and world models. He has published several papers at top-tier conferences, including NeurIPS, CVPR, ICLR, ICCV, and CoRL, with one selected for oral presentation. He is also an avid open-source contributor, with projects amassing over 30,000 GitHub stars. He has authored two bestselling books based on his tutorials.
 He is the chief organizer of <a href="https://embodied-world-models.github.io/" target="_blank" style="color:#224B8D">NeurIPS 2025 Workshop on Embodied World Models for Decision Making</a>.
 
@@ -170,6 +329,38 @@ I work in the field of Reinforcement learning, Computer vision, Deep learning, a
 <!-- </ul>
 </font> -->
 
+<p><b>Preprint</b></p>
+<font size="3">
+<ul>
+    <p style="text-indent: -2.5rem;margin-left: 0rem;">
+    <span>[5] Qiuyu Chen, <b>Qi Wang</b>, Liang Xu, Xin Jin, Baao Xie, Wenjun Zeng, 'Euler: Towards Human-Centered Multi-Agent Mathematical Discovery'. [<a href="https://arxiv.org/abs/2610.19864" target="_blank" style="color:#224B8D">arXiv</a>] [<a href="https://github.com/canghaimeng/Euler" target="_blank" rel="noopener noreferrer" style="color:#224B8D">Code</a>] [<a href="https://canghaimeng.site/euler/?lang=en" target="_blank" rel="noopener noreferrer" style="color:#224B8D">Website</a>] <b style="color:#BB2222">Solved three mathematical problems: the Lewis–Overton problem, the Nikoghosyan conjecture, and the four-connected version of the Jankiewicz–Norin–Wise problem.</b>
+    </span>
+    </p>
+    <p style="text-indent: -2.5rem;margin-left: 0rem;">
+    <span>[4] Jiajian Li, Jingyuan Huang, Junru Gong, <b>Qi Wang</b>, Xiaokang Yang, Yunbo Wang, 'OrbiSim: World Models as Differentiable Physics Engines for Embodied Intelligence'. [<a href="https://arxiv.org/abs/2605.16395" target="_blank" style="color:#224B8D">arXiv</a>] [<a href="https://jjleejj85.github.io/projects/orbisim/index.html" target="_blank" style="color:#224B8D">Website</a>]
+    </span>
+    </p>
+     <p style="text-indent: -2.5rem;margin-left: 0rem;">
+    <span>[3] Tan Wang, Yun Wei Dong, Tao Zhang, <b>Qi Wang</b>,'HTMformer: Hybrid Time and Multivariate Transformer for Time Series Forecasting'. [<a href="https://arxiv.org/pdf/2510.07084" target="_blank" style="color:#224B8D">arXiv</a>]
+    </span>
+    </p>
+    <p style="text-indent: -2.5rem;margin-left: 0rem;">
+    <span>[2] Mingqi Yuan*, <b> Qi Wang*</b>, Guozheng Ma*, Bo Li, Xin Jin, Yunbo Wang, Xiaokang Yang, Wenjun Zeng, Dacheng Tao, 'Plasticine: Accelerating Research in Plasticity-Motivated Deep Reinforcement Learning'. [<a href="https://arxiv.org/pdf/2504.17490" target="_blank" style="color:#224B8D">arXiv</a>][<a href="https://github.com/RLE-Foundation/Plasticine" target="_blank" style="color:#224B8D">Code</a>]
+    </span>
+    </p>
+      <p style="text-indent: -2.5rem;margin-left: 0rem;">
+    <span>[1] Yuyang Zhang, Baao Xie, Hu Zhu, <b>Qi Wang</b>, Huanting Guo, Xin Jin, Wenjun Zeng, 'Interpretable Single-View 3D Gaussian Splatting using Unsupervised Hierarchical Disentangled Representation Learning'. [<a href="https://arxiv.org/pdf/2504.04190" target="_blank" style="color:#224B8D">arXiv</a>]</span> </a>
+    </span>
+    </p>
+</ul>
+</font>
+<!-- <ul>
+<p style="text-indent: -2.5rem;margin-left: 0rem;">
+<span>[1] <b>Qi Wang</b>*, Zhipeng Zhang*, Baao Xie*, Xin Jin, Yunbo Wang, Shiyu Wang, Liaomo Zheng, Xiaokang Yang, Wenjun Zeng, 'Disentangled World Models: Learning to Transfer Semantic Knowledge from Distracting Videos for Reinforcement Learning', [<a href="https://arxiv.org/pdf/2503.08751" target="_blank" style="color:#224B8D">arXiv</a>].
+</span>
+</p>
+</ul> -->
+
 <p><b>Conferences</b></p>
 <font size="3"> 
 <ul>  
@@ -235,29 +426,6 @@ I work in the field of Reinforcement learning, Computer vision, Deep learning, a
  
 </ul>
 </font>
-
-<p><b>Preprint</b></p>
-<font size="3">
-<ul>
-     <p style="text-indent: -2.5rem;margin-left: 0rem;">
-    <span>[3] Tan Wang, Yun Wei Dong, Tao Zhang, <b>Qi Wang</b>,'HTMformer: Hybrid Time and Multivariate Transformer for Time Series Forecasting'. [<a href="https://arxiv.org/pdf/2510.07084" target="_blank" style="color:#224B8D">arXiv</a>]
-    </span>
-    </p> 
-    <p style="text-indent: -2.5rem;margin-left: 0rem;">
-    <span>[2] Mingqi Yuan*, <b> Qi Wang*</b>, Guozheng Ma*, Bo Li, Xin Jin, Yunbo Wang, Xiaokang Yang, Wenjun Zeng, Dacheng Tao, 'Plasticine: Accelerating Research in Plasticity-Motivated Deep Reinforcement Learning'. [<a href="https://arxiv.org/pdf/2504.17490" target="_blank" style="color:#224B8D">arXiv</a>][<a href="https://github.com/RLE-Foundation/Plasticine" target="_blank" style="color:#224B8D">Code</a>]
-    </span>
-    </p> 
-      <p style="text-indent: -2.5rem;margin-left: 0rem;">
-    <span>[1] Yuyang Zhang, Baao Xie, Hu Zhu, <b>Qi Wang</b>, Huanting Guo, Xin Jin, Wenjun Zeng, 'Interpretable Single-View 3D Gaussian Splatting using Unsupervised Hierarchical Disentangled Representation Learning'. [<a href="https://arxiv.org/pdf/2504.04190" target="_blank" style="color:#224B8D">arXiv</a>]</span> </a>
-    </span>
-    </p> 
-</ul>
-<!-- <ul> 
-<p style="text-indent: -2.5rem;margin-left: 0rem;">
-<span>[1] <b>Qi Wang</b>*, Zhipeng Zhang*, Baao Xie*, Xin Jin, Yunbo Wang, Shiyu Wang, Liaomo Zheng, Xiaokang Yang, Wenjun Zeng, 'Disentangled World Models: Learning to Transfer Semantic Knowledge from Distracting Videos for Reinforcement Learning', [<a href="https://arxiv.org/pdf/2503.08751" target="_blank" style="color:#224B8D">arXiv</a>].
-</span>
-</p> 
-</ul> -->
 
 <p><b>Books</b></p>
 <font size="3"> 
@@ -479,11 +647,13 @@ in Saint Petersburg, Russia, 2021.
 <ul>
 <li>Dongqi Liang, Ph.D. Student at the Institute of Automation, Chinese Academy of Sciences.</li>
 <li><a href="https://zhimin-z.github.io/" target="_blank" style="color:#224B8D">Zhimin Zhao</a> (visiting from Queen's University)</li>
-<li><a href="https://jjleejj85.github.io/" target="_blank" style="color:#224B8D">Jiajian Li</a>, Ph.D. Student at Shanghai Jiao Tong University.</li>
 <li>Zhihao Zheng (visiting from Peking University). Top National College Entrance Examination Scorer in the Science Track, Jiangsu Province.</li>
+<li>Yingxin Shen (visiting from East China Normal University).</li>
+<li>Yiming Wu (visiting from ShanghaiTech University).</li>
+<li><a href="https://jjleejj85.github.io/" target="_blank" style="color:#224B8D">Jiajian Li</a>, Ph.D. Student at Shanghai Jiao Tong University.</li>
 <li><a href="https://mianwu01.github.io/" target="_blank" style="color:#224B8D">Mian Wu</a>, Undergraduate Student at Shanghai Jiao Tong University.</li>
-<li>Wenlong Wang, Undergraduate Student at Huazhong University of Science and Technology, co-supervised with Prof. Jun Zhu at Tsinghua University.</li>
-<li>Jiazheng Zhu, Undergraduate Student at Chongqing University, co-supervised with Prof. Jun Zhu at Tsinghua University.</li>
+<li>Jiazheng Zhu, Chongqing University, co-supervised with Jun Zhu at Tsinghua University.</li>
+<li>Wenlong Wang, Huazhong University of Science and Technology, co-supervised with Jun Zhu at Tsinghua University.</li>
 <li>Qiuyu Chen, Ph.D. Student at Shanghai Jiao Tong University.</li>
 </ul>
 
@@ -491,7 +661,7 @@ in Saint Petersburg, Russia, 2021.
 <font size="3"> 
 <ul>
 <li>
-2026, Outstanding Graduate of Shanghai.
+2026, <b>Outstanding Graduate of Shanghai</b>.
 </li> 
 <li>
 2025, Zhefu Tao Scholarship, Shanghai Jiao Tong University.
@@ -542,17 +712,9 @@ in Saint Petersburg, Russia, 2021.
 <p style="margin-bottom: 3px;"><b>Reviewer</b></p>
 <font size="3">
 <ul>
-<li>IEEE International Conference on Robotics and Automation (<b>ICRA</b>).</li>
-<li>AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2027.</li>
-<li> <a href= "https://sites.google.com/view/continual-learning" target="_blank" style="color:#224B8D">Continual RL @ (<b>RLC</b>)</a>, 2026.</li>
-<li> International Conference on Machine Learning (<b>ICML</b>), 2026.</li>
-<li> European Conference on Computer Vision (<b>ECCV</b>), 2026.</li>
-<li> IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026.</li>
-<li>ACM Transactions on Multimedia Computing, Communications and Applications (<b>TOMM</b>), 2026</li>
-<li>International Journal of Computer Vision (<b>IJCV</b>), 2025</li>
-<li>International Conference on Learning Representations (<b>ICLR</b>), 2026.</li>
-<li>Chinese Conference on Pattern Recognition and Computer Vision (<b>PRCV</b>), 2025.</li>
-<li>Neural Information Processing Systems (<b>NeurIPS</b>), 2025.</li>
+<li><b>Conference Reviewer:</b> ICLR, ICML, NeurIPS, CVPR, ECCV, ICRA, PRCV, <a href="https://sites.google.com/view/continual-learning" target="_blank" style="color:#224B8D">Continual RL @ RLC</a>.</li>
+<li><b>Program Committee Member:</b> AAAI.</li>
+<li><b>Journal Reviewer:</b> <a href="https://dl.acm.org/journal/tomm" target="_blank" style="color:#224B8D">ACM TOMM</a>, <a href="https://www.springer.com/journal/11263" target="_blank" style="color:#224B8D">IJCV</a>.</li>
 </ul>
 </font>
 <p style="margin-bottom: 3px;"><b>Teaching</b></p>
@@ -737,10 +899,9 @@ in Saint Petersburg, Russia, 2021.
 
  
 <div id="article"></div>
-<div id="back_top">
-<div class="arrow"></div>
-<div class="stick"></div>
-</div>
+<button id="back_top" type="button" aria-label="Back to top" title="Back to top">
+  <span class="back-top-icon" aria-hidden="true"></span>
+</button>
 
 <script>
 $(function(){
